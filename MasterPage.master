@@ -1,0 +1,119 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 236px;
+        }
+        .style3
+        {
+            width: 965px;
+        }
+        .style4
+        {
+            width: 236px;
+            height: 50px;
+        }
+        .style5
+        {
+            width: 965px;
+            height: 50px;
+        }
+        .style6
+        {
+            height: 50px;
+        }
+    </style>
+</head>
+<body background="sample/sample.jpg">
+    <form id="form1" runat="server">
+    <div>
+        <table class="style1">
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style3" colspan="7">
+                    <asp:Image ID="Image1" runat="server" Height="181px" Width="1408px" 
+                        ImageUrl="~/banner/banner1.jfif" />
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style3">
+                    <asp:ImageButton ID="ImageButton8" runat="server" Height="53px" 
+                        ImageUrl="~/Buttons2/home.png" onclick="ImageButton8_Click" 
+                        Width="181px" />
+                </td>
+                <td class="style3">
+                    <asp:ImageButton ID="ImageButton10" runat="server" 
+                        onclick="ImageButton10_Click" Height="53px" 
+                        ImageUrl="~/Buttons2/explore.png" Width="181px" />
+                </td>
+                <td class="style3">
+                    <asp:ImageButton ID="ImageButton9" runat="server" Height="53px" 
+                        ImageUrl="~/Buttons2/sign.png" onclick="ImageButton9_Click1" 
+                        Width="181px" />
+                </td>
+                <td class="style3">
+                    <asp:ImageButton ID="ImageButton11" runat="server" Height="53px" 
+                        ImageUrl="~/buttonsnew/ViewProfile.png" onclick="ImageButton11_Click" 
+                        Width="181px" />
+                </td>
+                <td class="style3">
+                    <asp:ImageButton ID="ImageButton6" runat="server" Height="53px" 
+                        ImageUrl="~/Buttons2/contactus.png" Width="181px" 
+                        onclick="ImageButton6_Click" />
+                </td>
+                <td class="style3">
+                    <asp:ImageButton ID="ImageButton3" runat="server" Height="53px" 
+                        ImageUrl="~/Buttons2/feedback.png" Width="181px" 
+                        onclick="ImageButton3_Click" />
+                </td>
+                <td class="style3">
+                    <asp:ImageButton ID="ImageButton4" runat="server" Height="53px" 
+                        ImageUrl="~/Buttons2/about.png" Width="181px" 
+                        onclick="ImageButton4_Click" />
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="style4">
+                    </td>
+                <td class="style5" colspan="7">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="style6">
+                    </td>
+            </tr>
+            <tr>
+                <td class="style2">
+                    &nbsp;</td>
+                <td class="style3" colspan="7">
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>
